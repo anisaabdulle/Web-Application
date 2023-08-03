@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Module</title>
+  <style>
+    /* Internal CSS for the admin login form */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #3262a8;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .centered-heading {
+      text-align: center;
+    }
+
+    .admin-login-form {
+      max-width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .admin-login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .admin-login-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .admin-login-form label {
+      margin-bottom: 5px;
+    }
+
+    .admin-login-form input[type="text"],
+    .admin-login-form input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .admin-login-form input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .admin-login-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Additional styles for the header navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="recipehome.html">Home</a>
+        <a href="recipeabout.html">About</a>
+        <a href="recipe.html">Recipes</a>
+        <a href="profile.html">User Profile</a>
+        <a href="adminmodule.html">Admin Module</a>
+    
+    </nav>
+  </header>
+  <h2 class="centered-heading">Admin Login</h2>
+
+  <div class="admin-login-form">
+    <form>
+      <label>Username</label>
+      <input type="text" name="username" placeholder="Enter your username"><br>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter your password"><br>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <button type="submit" class="centered-button"><a href="display.php" class="cta-button">Recipes display</a></button>
+</body>
+</html>

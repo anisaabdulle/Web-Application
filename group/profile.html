@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: fffff;
+    }
+
+    header {
+      background-color: #3262a8;
+      color: white;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form, #profile-container {
+  margin-top: 20px;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1a71b9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+		<nav>
+			<a href="recipehome.html">Home</a>
+			<a href="recipeabout.html">About</a>
+			<a href="recipe.html">Recipes</a>
+            <a href="profile.html">User Profile</a>
+			<a href="adminmodule.html">Admin Module</a>
+		</nav>
+	</header>
+  <main>
+    
+  <div class="container">
+    <h1>User Profile</h1>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="profile-container" class="hidden">
+      <h2>Welcome, <span id="user-fullname"></span>!</h2>
+      <p><strong>Username:</strong> <span id="user-username"></span></p>
+      <p><strong>Email:</strong> <span id="user-email"></span></p>
+    </div>
+  </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recipes</title>
+	<style>
+		/* Internal CSS starts here */
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color:#3262a8 ;
+			color: #fff;
+			padding: 10px;
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.featured-recipes {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+
+		.recipe-card {
+			flex-basis: 30%;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+		.recipe-card img {
+			width: 100%;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.recipe-card h3 {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+		.recipe-card p {
+			font-size: 16px;
+		}
+
+		footer {
+			background-color: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+		}
+        .centered-button {
+  /* Add your desired styles here */
+  display: flex; 
+  margin: 0 auto; /* This centers the button horizontally */
+  padding: 10px 20px;
+  background-color:rgb(202, 211, 221);
+  color:#f8f6f6;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+		/* Internal CSS ends here */
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="recipehome.html">Home</a>
+			<a href="recipeabout.html">About</a>
+			<a href="recipe.html">Recipes</a>
+            <a href="profile.html">User Profile</a>
+			<a href="adminmodule.html">Admin Module</a>
+		</nav>
+	</header>
+	<main>
+		<section class="featured-recipes">
+			<div class="recipe-card">
+				<img src="food1.jpg" alt="Recipe 1">
+				<h3><b>Spaghetti Carbonara</b></h3>
+				<p>A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper.</p>
+			</div>
+			<div class="recipe-card">
+				<img src="food2.jpg" alt="Recipe 2">
+				<h3><b>Chicken Stir-Fry</b></h3>
+				<p>A quick and easy stir-fry recipe with tender chicken, colorful vegetables, and flavorful sauce.</p>
+			</div>
+			<div class="recipe-card">
+				<img src="food3.jpg" alt="Recipe 3">
+				<h3><b>Chocolate Chip Cookies</b></h3>
+				<p>Irresistibly delicious cookies loaded with chocolate chips, perfect for a sweet treat.</p>
+               
+			</div>
+		</section>
+        <button type="submit" class="centered-button"><a href="createrecipe.php" class="cta-button">Create Recipe</a></button>
+	</main>
+	<footer>
+		<p>&copy; 2023 Recipe Sharing Platform. All rights reserved.</p>
+	</footer>
+	<script src="recipe.js"></script>
+</body>
+</html>
