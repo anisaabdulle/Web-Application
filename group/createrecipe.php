@@ -56,27 +56,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Create Recipe</title>
     <style>
         /* Internal CSS starts here */
-		body {
+	body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f5f5f5;
+      background-position: center;
+		    background-size: contain;
+            border-image-width: 90%; background-image: url(image7.avif);
     }
+    nav {
+			display: flex;
+			justify-content: center;
+		}
 
-    header {
-      background-color: #3262a8;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      
-    }
+	nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
 
-    nav a {
-      text-align: center;
-      color: #fff;
-      text-decoration: none;
-      margin-right: 15px;
-    }
+	nav a:hover {
+			text-decoration: underline;
+		}
+     header {
+			background-color: #3262a8;
+			color: #fff;
+			padding: 10px;
+
+		}
+		main {
+			padding: 10px;
+		}
+    
 
         main {
             padding: 20px;

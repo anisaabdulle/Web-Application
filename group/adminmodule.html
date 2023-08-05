@@ -8,34 +8,52 @@
     /* Internal CSS for the admin login form */
     body {
       font-family: Arial, sans-serif;
+
       margin: 0;
       padding: 0;
+     
       background-color: #f5f5f5;
+      background-position: center;
+      background-size: cover;
+      border-image-width: 120%; 
+      background-image: url(image7.avif);
     }
 
-    header {
-      background-color: #3262a8;
-      color: #fff;
-      padding: 10px;
-    }
+    nav {
+			display: flex;
+			justify-content: center;
+		}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 15px;
-    }
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+        header {
+			background-color: #3262a8;
+			color: #fff;
+			padding: 10px;
+
+		}
+		main {
+			padding: 0px;
+		}
 
     .centered-heading {
       text-align: center;
     }
-
+    
     .admin-login-form {
-      max-width: 300px;
+      max-width: 350px;
       margin: 50px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 60px;
+      background-color: #c3c6ca;
+      border-radius: 30px;
+      box-shadow: 10 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .admin-login-form h2 {
@@ -61,7 +79,7 @@
     }
 
     .admin-login-form input[type="submit"] {
-      background-color: #007BFF;
+      background-color: #55718f;
       color: #fff;
       padding: 10px;
       border: none;
@@ -70,7 +88,7 @@
     }
 
     .admin-login-form input[type="submit"]:hover {
-      background-color: #0056b3;
+      background-color: #6489b0;
     }
 
     /* Additional styles for the header navigation */
@@ -83,6 +101,28 @@
     nav a:hover {
       background-color: #555;
     }
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgb(155, 196, 243);
+  color: #60acda;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.centered-button:hover {
+  background-color: #94baf0;
+}
+
+/* ... Your existing CSS styles ... */
+
   </style>
 </head>
 <body>
@@ -109,6 +149,8 @@
       <input type="submit" value="Login">
     </form>
   </div>
-  <button type="submit" class="centered-button"><a href="display.php" class="cta-button">Recipes display</a></button>
+  <button type="submit" class="centered-button">
+    <a href="display.php" class="cta-button">Recipes display</a>
+  </button>
 </body>
 </html>

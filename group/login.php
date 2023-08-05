@@ -41,28 +41,34 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
       margin: 0;
       padding: 0;
       background-color: fffff;
-    }
-
-    header {
-      background-color: #3262a8;
-      color: white;
-      padding: 10px;
+      background-position: center;
+		  background-size: cover;
+      border-image-width: 90%; background-image: url(image7.avif);
     }
 
     nav {
-      display: flex;
-      justify-content: center;
-    }
+			display: flex;
+			justify-content: center;
+		}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+		nav a:hover {
+			text-decoration: underline;
+		}
+        header {
+			background-color: #3262a8;
+			color: #fff;
+			padding: 10px;
+
+		}
+		main {
+			padding: 10px;
+		}
 
     .centered-heading {
       text-align: center;
@@ -74,8 +80,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
       margin: 0 auto;
       padding: 20px;
       border: 3px solid #3d3d3d;
-      border-radius: 5px;
-      background-color: #2083a4;
+      border-radius: 30px;
+      background-color: #b3b9bd;
     }
 
     .login label {

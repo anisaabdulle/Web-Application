@@ -32,6 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       margin: 0;
       padding: 0;
       background-color:white;
+      background-position: center;
+		  background-size: cover;
+      border-image-width: 90%; 
+      background-image: url(image7.avif);
     }
 
     header {
@@ -65,8 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       margin: 0 auto;
       padding: 20px;
       border: 3px solid #3d3d3d;
-      border-radius: 5px;
-      background-color: #2083a4;
+      border-radius: 30px;
+      background-color: #b3b9bd;
     }
 
     .login label {
@@ -87,13 +91,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     .login input[type="submit"] {
-      background-color: #e3eaee;
-      color: #201c1c;
+      background-color:black;
+      color: black;
       cursor: pointer;
     }
 
     .login input[type="submit"]:hover {
-      background-color: #e1eced;
+      background-color:black;
     }
     /* Assuming you have a class "centered-button" in your CSS */
 .centered-button {
@@ -102,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   margin: 0 auto; /* This centers the button horizontally */
   padding: 10px 20px;
   background-color:white;
-  color:#201c1c;
+  color:black;
   border: none;
   border-radius: 5px;
   font-size: 16px;
